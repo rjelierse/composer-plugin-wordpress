@@ -1,0 +1,24 @@
+{
+  "name": "sparse/composer-plugin-wordpress",
+  "description": "Composer plugin to install Wordpress themes and plugins",
+  "type": "composer-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Raymond Jelierse",
+      "email": "info@raymondjelierse.nl"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "composer-plugin-api": "1.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sparse\\Composer\\": "src/"
+    }
+  },
+  "extra": {
+    "class": "Sparse\\Composer\\WordpressInstallerPlugin"
+  }
+}
